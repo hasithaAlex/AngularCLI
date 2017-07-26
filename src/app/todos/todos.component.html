@@ -1,0 +1,11 @@
+<p>
+  todos works!
+</p>
+<form (submit)="addTodo()">
+  <input type="text" [(ngModel)]="text" name="name">
+</form>
+
+<h2>Todo List </h2>
+<div class="form-group" *ngFor="let todo of todos">
+  <input type="text" class="form-control" id="usr" value="{{todo.text}}">
+</div>
